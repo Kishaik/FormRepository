@@ -1,0 +1,35 @@
+<html> 
+    <head>
+        <title> Form Validation </title>
+
+        <script type="text/javascript">
+
+        function f1()
+        {
+            u= document.frm1.uname.value;
+            p= document.frm1.pwd.value
+            if(u=="")
+            {
+                alert("Username is empty");
+            }
+            if(p=="")
+            {
+                alert("Pwd is empty");
+            }
+        }
+
+
+        </script>
+    </head>
+
+    <body>
+        
+        <form name="frm1" action="1.html" method="post">
+            UserName: <input type="text" name="uname"> <br> <br> 
+            Password: <input type="password"  name="pwd"> <br> <br> 
+            <input type="button" value="Login" onclick="f1()"> 
+
+        </form>
+        
+    </body>
+</html>
